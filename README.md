@@ -1,1 +1,31 @@
-# 5G-NR-PHY-link-level-simulator
+# 5G-NR-PHY-link-level-simulator 
+
+
+## 📌 Overview
+This project implements a **5G NR Physical Layer (PHY) simulator** in Python (Google Colab).  
+It evaluates **BER/BLER performance** under different conditions and extends to **system-level simulations**.
+
+## 🚀 Features
+- Modulation schemes: QPSK, 16-QAM
+- Channel models: AWGN, Rayleigh, CDL/TDL
+- Channel coding: LDPC vs Polar codes
+- HARQ retransmissions (Chase combining)
+- MIMO support (2x2 Zero-Forcing equalization)
+- Link-to-system mapping: throughput vs SNR
+- Scheduling algorithms: Round-Robin, Proportional Fair (PF)
+- PF + HARQ combined system-level simulation
+
+## 📊 Proof Points
+1. Modulation trade-off (QPSK vs 16-QAM)
+2. Channel coding gain (LDPC vs uncoded, Polar vs LDPC)
+3. Channel effects (AWGN vs Rayleigh vs CDL/TDL)
+4. HARQ retransmissions improve reliability
+5. MIMO diversity gain
+6. Link-to-system mapping (multi-user throughput)
+7. Scheduler impact (Round-Robin vs PF)
+8. HARQ under PF scheduling
+
+## 🛠 Requirements
+Install dependencies:
+```bash
+pip install numpy matplotlib pyldpc
